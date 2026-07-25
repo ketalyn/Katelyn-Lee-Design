@@ -1,128 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5B7TTVXPLB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5B7TTVXPLB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-5B7TTVXPLB');
-</script>
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "G-5B7TTVXPLB");
+  </script>
 
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Katelyn Lee Design</title>
-<link rel="icon" href="../assets/mouseclick.png" type="image/png" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Play — Katelyn Lee Design</title>
+
+  <link
+    rel="icon"
+    href="../assets/mouseclick.png"
+    type="image/png"
+  />
+
   <link rel="stylesheet" href="../project.css" />
 </head>
+
 <body class="play-page">
-  <div class="site-wrapper">
+  <div class="play-wrapper">
 
+    <!-- LEFT SIDEBAR -->
+    <aside class="play-sidebar">
+      <div class="play-sidebar-top">
+        <a href="../" class="site-title">
+          KATELYN LEE
+        </a>
 
-    <header class="project-chrome">
-      <a href="../" class="site-title">KATELYN LEE</a>
+        <!-- CURRENT PROJECT INFORMATION -->
+        <div class="play-project-info">
+          <div class="play-project-heading">
+            <h1 class="play-project-title" id="play-project-title">
+              Riso Animation + Flipbooks
+            </h1>
 
+            <span class="play-project-year" id="play-project-year">
+              2025
+            </span>
+          </div>
+
+          <div
+            class="play-project-description"
+            id="play-project-description"
+          >
+            Blender animation rendered into a series of
+            risograph-printed flipbooks.
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT SELECTOR -->
+      <div
+        class="play-project-list"
+        aria-label="Play projects"
+      >
+        <button
+          class="play-project-button active"
+          type="button"
+          data-project="riso"
+        >
+          <span>Riso Animation + Flipbooks</span>
+          <span>2025</span>
+        </button>
+
+        <button
+          class="play-project-button"
+          type="button"
+          data-project="wienerschnitzel"
+        >
+          <span>Wiener Dog Hall of Fame</span>
+          <span>2023</span>
+        </button>
+
+        <button
+          class="play-project-button"
+          type="button"
+          data-project="hyundai"
+        >
+          <span>Hyundai E-bike</span>
+          <span>2023</span>
+        </button>
+
+        <button
+          class="play-project-button"
+          type="button"
+          data-project="blender"
+        >
+          <span>Blender Animations</span>
+          <span>2024</span>
+        </button>
+
+        <button
+          class="play-project-button"
+          type="button"
+          data-project="touchdesigner"
+        >
+          <span>TouchDesigner Experiment</span>
+          <span>2025</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- RIGHT CONTENT -->
+    <main class="play-content">
       <nav class="top-nav">
         <a href="../">Work</a>
         <a href="../play" class="active">Play</a>
         <a href="../about">About</a>
-        <a href="https://drive.google.com/file/d/1KI7xflAY8NanYzPTDMOPrRgD8ixf8LeU/view?usp=sharing" target="_blank">Resume</a>
+        <a
+          href="https://drive.google.com/file/d/1KI7xflAY8NanYzPTDMOPrRgD8ixf8LeU/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
       </nav>
-    </header>
 
-<section class="play-gallery">
-  <article class="play-item portrait">
-    <a class="play-media">
-      <img src="../assets/play/nopink copy.gif" alt="Riso animation flipbook" />
-    </a>
-    <div class="play-caption">
-      <span class="play-title">Riso Animation + Flipbooks</span>
-      <span class="play-year">2025</span>
-      <span class="play-about"><br>Blender animation rendered into a series of risograph-printed flipbooks.</span>
-    </div>
-  </article>
+      <section
+        class="play-carousel"
+        id="play-carousel"
+        aria-label="Project carousel"
+      >
+        <div class="play-carousel-media" id="play-carousel-media">
+          <!-- Media is inserted by play.js -->
+        </div>
 
-    <article class="play-item wide">
-    <a class="play-media">
-      <img src="../assets/play/flipbookscan1.png" alt="Wishful Thinking piece" />
-    </a>
-  </article>
+        <button
+          class="play-carousel-zone play-carousel-zone-left"
+          id="play-carousel-previous"
+          type="button"
+          aria-label="Previous image"
+        ></button>
 
-        <article class="play-item square large">
-    <a class="play-media">
-      <img src="../assets/play/WS_hof.png" alt="Blender animation typography" />
-    </a>
-    <div class="play-caption">
-      <span class="play-title">Wienerschnitzel's Wiener Dog Hall of Fame</span>
-      <span class="play-year">2023</span>
-      <span class="play-about"><br>Entered in Social Good Campaign category of the 16th Annual Shorty Awards. 
-      <a href="https://shortyawards.com/16th/the-wiener-dog-hall-of-fame" target="_blank">Read about it here!</a>
-    </span>
-    </div>
-  </article>
+        <button
+          class="play-carousel-zone play-carousel-zone-right"
+          id="play-carousel-next"
+          type="button"
+          aria-label="Next image"
+        ></button>
+      </section>
 
-      <article class="play-item landscape">
-    <a class="play-media">
-      <img src="../assets/play/hyundaiebike.gif" alt="Blender animation typography" />
-    </a>
-    <div class="play-caption">
-      <span class="play-title">Hyundai E-bike</span>
-      <span class="play-year">2023</span>
-      <span class="play-about"><br>3D renders and designs for a Hyundai E-bike as part of a proposed campaign and brand venture.</span>
-    </div>
-  </article>
+      <div class="play-carousel-footer">
+        <span id="play-carousel-count">1 / 2</span>
 
-    <article class="play-item square large">
-    <a class="play-media">
-      <img src="../assets/play/mantra_final copy.gif" alt="Blender animation typography" />
-    </a>
-    <div class="play-caption">
-      <span class="play-title">Blender Animation</span>
-      <span class="play-year">2024</span>
-    </div>
-  </article>
+        <div class="play-carousel-controls">
+          <button
+            id="play-previous-button"
+            type="button"
+            aria-label="Previous image"
+          >
+            ←
+          </button>
 
-      <article class="play-item square large">
-    <a class="play-media">
-      <video autoplay muted loop playsinline>
-        <source src="../assets/play/0001-0060.mp4" type="video/mp4" />
-      </video>
-    </a>
-  </article>
-
-        <article class="play-item square large">
-    <a class="play-media">
-      <img src="../assets/play/wishfulthinking.jpg" alt="Another piece" />
-    </a>
-  </article>
-
-  <article class="play-item portrait">
-    <a class="play-media">
-      <video autoplay muted loop playsinline>
-        <source src="../assets/play/Screen Recording 2025-12-26 at 1.36.29 PM copy (2).mp4" type="video/mp4" />
-      </video>
-    </a>
-    <div class="play-caption">
-      <span class="play-title">TouchDesigner Experiment</span>
-      <span class="play-year">2025</span>
-    </div>
-  </article>
-
-      <article class="play-item landscape">
-    <a class="play-media">
-      <img src="../assets/play/spreads_animation copy.gif" alt="Blender animation typography" />
-    </a>
-    <div class="play-caption">
-      <span class="play-title">Halmoni's Recipes</span>
-      <span class="play-year">2022</span>
-      <span class="play-about"><br>Editorial design and illustrations for a recipe book compiling my grandmother's recipes.</span>
-    </div>
-  </article>
-
-</section>
-
+          <button
+            id="play-next-button"
+            type="button"
+            aria-label="Next image"
+          >
+            →
+          </button>
+        </div>
+      </div>
+    </main>
   </div>
+
+
+   <div class="carousel-cursor" aria-hidden="true">☞</div>
+  <script src="../play.js"></script>
 </body>
 </html>
