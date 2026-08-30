@@ -121,42 +121,55 @@
 
 <section class="related-projects">
 
-  <article class="related-project-card">
+          <article class="related-project-card">
     <a href="../gems" class="related-image-link">
-        <video
-    src="../assets/GEMS/grid_remix.mp4"
-    autoplay
-    muted
-    loop
-    playsinline
-  ></video>
+            <video
+            src="../assets/GEMS/grid_remix.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            ></video>
     </a>
 
-    <div class="related-project-meta hover-description">
-      <div class="meta-default">
-        <div class="meta-title">GEMS</div>
-        <div class="meta-subtitle">Brand Identity · UI Design</div>
+    <div class="related-project-meta">
+      <div class="related-project-meta-header">
+        <button class="project-toggle" type="button" aria-expanded="false" aria-label="Show project description">
+          <span class="project-toggle-icon">↓</span>
+        </button>
+
+        <div class="related-project-meta-text">
+          <a href="../gems" class="related-title-link">GEMS</a>
+          <div class="meta-subtitle">Brand Identity · UI Design</div>
+        </div>
       </div>
-      <div class="meta-hover">
-        A concept platform for discovering local gems, combining brand identity with a digital experience built around exploration and access.
+
+      <div class="related-project-description" hidden>
+      A concept platform for discovering local gems, combining brand identity with a digital experience built around exploration and access.
       </div>
     </div>
   </article>
 
-    <article class="related-project-card">
-    <a href="../lately" class="related-image-link">
+          <article class="related-project-card">
+    <a href="../katelynlee-is-online" class="related-image-link">
       <img src="../assets/katelynleeisonline/landscape_1.jpg" alt="Preview of KATELYN LEE IS ONLINE project" />
     </a>
 
-    <div class="related-project-meta hover-description">
-      <div class="meta-default">
-        <div class="meta-title">KATELYN LEE IS ONLINE</div>
-        <div class="meta-subtitle">Data Visualization · Editorial Design · Creative Code</div>
+    <div class="related-project-meta">
+      <div class="related-project-meta-header">
+        <button class="project-toggle" type="button" aria-expanded="false" aria-label="Show project description">
+          <span class="project-toggle-icon">↓</span>
+        </button>
+
+        <div class="related-project-meta-text">
+          <a href="../katelynlee-is-online" class="related-title-link">KATELYN LEE IS ONLINE</a>
+          <div class="meta-subtitle">Editorial · Creative Code · Data Visualization</div>
+        </div>
       </div>
-      <div class="meta-hover">
-        A long-form thesis project documenting and translating six months
-          of browser history into a system of publications, visualizations,
-          and coded reading experiences.
+
+      <div class="related-project-description" hidden>
+      Six months of browser history, translated into a system of publications, visualizations,
+      and coded reading experiences.
       </div>
     </div>
   </article>
@@ -165,5 +178,7 @@
 
     </main>
   </div>
+
+    <script src="../toggles.js"></script>
 </body>
 </html>

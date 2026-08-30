@@ -373,39 +373,3 @@ function prepareProjectCarousels() {
 }
 
 prepareProjectCarousels();
-
-/* ---------------------------------
-   PROJECT DESCRIPTION TOGGLES
----------------------------------- */
-
-function prepareProjectDescriptionToggles() {
-  const projectMetas = document.querySelectorAll(".project-meta");
-
-  projectMetas.forEach((meta) => {
-    const toggle = meta.querySelector(".project-toggle");
-    const description = meta.querySelector(".project-description");
-
-    if (!toggle || !description) return;
-
-    toggle.addEventListener("click", () => {
-      const isExpanded =
-        toggle.getAttribute("aria-expanded") === "true";
-
-      toggle.setAttribute(
-        "aria-expanded",
-        String(!isExpanded)
-      );
-
-      toggle.setAttribute(
-        "aria-label",
-        isExpanded
-          ? "Show project description"
-          : "Hide project description"
-      );
-
-      description.hidden = isExpanded;
-    });
-  });
-}
-
-prepareProjectDescriptionToggles();

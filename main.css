@@ -552,106 +552,27 @@ img {
   opacity: 1;
 } */
 
-/* tablet */
-@media (max-width: 1100px) {
-  .play-gallery {
-    column-count: 2;
-    column-gap: 18px;
-  }
-
-  .play-item {
-    margin-bottom: 18px;
-  }
-
-}
-
-@media (max-width: 900px) {
-  .about {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .about-img-small {
-    position: static;
-    width: 70%;
-    margin-top: 20px;
-  }
-}
-
-/* mobile */
-@media (max-width: 768px) {
-  .play-gallery {
-    column-count: 1;
-    column-gap: 0;
-    padding-top: 56px;
-  }
-
-  .play-caption {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .play-gallery {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
-    gap: 18px;
-  }
-
-  .play-item.span-6,
-  .play-item.span-7,
-  .play-item.span-8,
-  .play-item.span-12 {
-    grid-column: span 8;
-  }
-
-  .play-item.span-3,
-  .play-item.span-4,
-  .play-item.span-5 {
-    grid-column: span 4;
-  }
-}
-
-@media (max-width: 768px) {
-  .play-gallery {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    padding-top: 56px;
-  }
-
-  .play-item,
-  .play-item.span-3,
-  .play-item.span-4,
-  .play-item.span-5,
-  .play-item.span-6,
-  .play-item.span-7,
-  .play-item.span-8,
-  .play-item.span-12 {
-    grid-column: span 1;
-  }
-
-  .play-caption {
-    font-size: 0.9rem;
-  }
-}
-
 /* RESPONSIVE */
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .sidebar {
-    width: 320px;
+    width: 380px;
   }
 
   .site-wrapper::before {
-    left: 320px;
+    left: 380px;
   }
 
   .content {
-    margin-left: 320px;
-    width: calc(100% - 320px);
-    padding: 88px 28px 40px 28px;
+    margin-left: 380px;
+    width: calc(100% - 380px);
+    padding: 48px 40px 40px 40px;
   }
-}
 
-/* HOVER REVEALS */
+  .sidebar-bottom, .project-meta, .meta-subtitle{
+    font-size: 1.15rem;
+  }
+
+  /* HOVER REVEALS */
 .hover-reveal,
 .hover-description {
   position: relative;
@@ -683,20 +604,34 @@ img {
 .alt-section {
   margin-top: 28px;
 }
+}
 
 /* ---------- TABLET ---------- */
 @media (max-width: 1024px) {
   .sidebar {
     width: 300px;
-    padding: 0 16px 0 24px;
+    padding: 0 20px 0 24px;
+  }
+
+  .sidebar-bottom p{
+    padding-top:50px;
+    background-color: transparent;
   }
 
   .site-wrapper::before {
     left: 300px;
   }
+  .site-title, .intro, .sidebar-bottom p,
+  .project-meta{
+    font-size: 1rem;
+  }
 
   .intro {
     max-width: 250px;
+  }
+
+  .intro p{
+    margin: 0 0 20px 0;
   }
 
   .content {
@@ -710,12 +645,24 @@ img {
     right: 24px;
   }
 
+  .top-nav a{
+    font-size: 1rem;
+  }
+
+  .project-feed{
+    padding-top:10px;
+  }
+
   .project-card {
     max-width: 100%;
   }
 
   .project-meta {
     max-width: 100%;
+  }
+
+  .project-description{
+    margin-left:35px;
   }
 }
 
@@ -742,7 +689,7 @@ img {
     width: 100%;
     height: auto;
     padding: 72px 16px 24px;
-    background: #000;
+    background: transparent;
   }
 
   .sidebar-top {
@@ -760,7 +707,7 @@ img {
     padding: 12px 16px;
 
     background: #000;
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .intro {
@@ -801,7 +748,7 @@ img {
   }
 
   .top-nav a {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .project-feed {
@@ -863,7 +810,7 @@ img {
 
   .site-title {
     padding: 10px 12px;
-    font-size: 0.82rem;
+    font-size: 0.9rem;
   }
 
   .intro {
@@ -876,7 +823,7 @@ img {
   }
 
   .content {
-    padding: 0 12px 30px;
+    padding: 0px 12px 30px;
   }
 
   .top-nav {
@@ -884,11 +831,41 @@ img {
   }
 
   .top-nav a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .site-title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .project-description {
+  margin-top: 8px;
+  margin-left: 28px;
+  max-width: 100%;
+  color: #9f9f9f;
+  line-height: 1.25;
+  background-color: transparent;
+}
+
+  .project-toggle {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 0px 0 0 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #f2f2f2;
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+  .project-toggle-icon{
+    display: block;
+    font-size: 2rem;
+    line-height: 0.8;
+    transform-origin: center;
   }
 
   .project-image-link,
@@ -896,12 +873,8 @@ img {
     aspect-ratio: 1.3 / 0.8;
   }
 
-  .meta-title {
-    font-size: 0.8rem;
-  }
-
   .meta-subtitle {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     opacity: 0.7;
   }
 }
